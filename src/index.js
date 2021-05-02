@@ -30,19 +30,19 @@ btnTijera.addEventListener('click', () => {
 
 const play = (opcionUsuario) => {
 
-    usuarioImg.src = "/assets/" + opcionUsuario + "1.png" ///src/assets/piedra1.png
+    usuarioImg.src = "assets/" + opcionUsuario + "1.png" ///srcassets/piedra1.png
     resultadoTexto.innerHTML = "PENSANDO";
 
     const intervalo = setInterval(() => {
         const opcionMaquina = calcularMaquinaOpcion();
-        maquinaImg.src = "/assets/" + opcionMaquina + "2.png"
+        maquinaImg.src = "assets/" + opcionMaquina + "2.png"
     }, 150);
 
     setTimeout(() => {
         clearInterval(intervalo);
         const opcionMaquina = calcularMaquinaOpcion();
         const resultado = calcularResultado(opcionUsuario, opcionMaquina);
-        maquinaImg.src = "/assets/" + opcionMaquina + "2.png"
+        maquinaImg.src = "assets/" + opcionMaquina + "2.png"
 
         switch (resultado) {
             case EMPATE:
