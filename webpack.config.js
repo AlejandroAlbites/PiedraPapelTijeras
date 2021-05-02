@@ -14,19 +14,11 @@ module.exports = {
         rules: [
            {
                 test: /\.css$/,
-                exclude: /styles\.css$/,
                 use:[
                     'style-loader',
                     'css-loader'
                 ]
            },
-           {
-            test: /styles\.css$/,
-            use:[
-                MiniCssExtractPlugin.loader,
-                'css-loader'
-            ]
-       },
             {
                 test: /\.html$/i,
                 loader: 'html-loader',

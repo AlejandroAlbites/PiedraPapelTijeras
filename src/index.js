@@ -1,3 +1,5 @@
+import './styles/index.css';
+
 const PIEDRA = 'piedra';
 const PAPEL = 'papel';
 const TIJERA = 'tijera';
